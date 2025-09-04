@@ -1,0 +1,64 @@
+{
+  "model_type": "rnn",
+  "framework": "tensorflow",
+  "hyperparameters": {
+    "learning_rate": 0.001,
+    "batch_size": 8,
+    "dropout_rate": 0.3,
+    "epochs": 2
+  },
+  "metrics": {
+    "sentiment_accuracy": 0.9577464788732394,
+    "emotion_accuracy": 0.09859154929577464,
+    "sentiment_f1_macro": 0.4892086330935252,
+    "emotion_f1_macro": 0.02702702702702703,
+    "sentiment_f1_weighted": 0.9370756915594285,
+    "emotion_f1_weighted": 0.01865245527217358
+  },
+  "history": {
+    "emotion_output_accuracy": [
+      0.14979757368564606,
+      0.15789473056793213
+    ],
+    "emotion_output_loss": [
+      1.998122215270996,
+      2.046548366546631
+    ],
+    "loss": [
+      2.8021528720855713,
+      2.263249397277832
+    ],
+    "sentiment_output_accuracy": [
+      0.6761133670806885,
+      0.9352226853370667
+    ],
+    "sentiment_output_loss": [
+      0.801863968372345,
+      0.21604473888874054
+    ],
+    "val_emotion_output_accuracy": [
+      0.1388888955116272,
+      0.1388888955116272
+    ],
+    "val_emotion_output_loss": [
+      2.010159730911255,
+      2.014200448989868
+    ],
+    "val_loss": [
+      2.250420570373535,
+      2.1311635971069336
+    ],
+    "val_sentiment_output_accuracy": [
+      0.9722222089767456,
+      0.9722222089767456
+    ],
+    "val_sentiment_output_loss": [
+      0.24435551464557648,
+      0.10982497036457062
+    ],
+    "learning_rate": [
+      0.0010000000474974513,
+      0.0010000000474974513
+    ]
+  }
+}

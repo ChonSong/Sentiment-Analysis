@@ -222,11 +222,13 @@ class DataLoaderManager:
                 length = min(len(seq), max_length)
                 padded_sequences[i, :length] = seq[:length]
             
-            dataset = tf.data.Dataset.from_tensor_slices({
-                'input_ids': padded_sequences,
-                'sentiment_labels': sentiment_labels,
-                'emotion_labels': emotion_labels
-            })
+            dataset = tf.data.Dataset.from_tensor_slices((
+                padded_sequences,
+                {
+                    'sentiment_output': sentiment_labels,
+                    'emotion_output': emotion_labels
+                }
+            ))
             
             if shuffle:
                 dataset = dataset.shuffle(buffer_size)
